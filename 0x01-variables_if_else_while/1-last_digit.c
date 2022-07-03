@@ -2,13 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - printsfith digit of variable
+ * main - print fifth digit of variable
  * checks conditions
  * Return: Always 0 (sucess)
  */ 
-int main (void)
+int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	printf("Last digit of %d is %d", n, n % 10);
