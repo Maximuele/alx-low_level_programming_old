@@ -5,9 +5,9 @@
  * @c: int that will be usde for the argument of the function
  * Return: 0
  */
-int _islower(int ch)
+int _islower(int c)
 {
-	if (ch >= 'a' && ch <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
