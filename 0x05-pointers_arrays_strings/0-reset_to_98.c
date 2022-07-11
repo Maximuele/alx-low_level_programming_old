@@ -1,16 +1,11 @@
 #include "main.h"
 
 /**
- * reset_to_98 - function that takes a pointer 
- * to an int as parameter and updates value to 98
- * Return: 0
+ * reset_to_98 - updates the value of the variable
+ * the pointer points to to 98
+ * @n: pointer to the variable update
  */
-
-void reset_to_98(int *n);
+void reset_to_98(int *n)
 {
-	int n;
-	putchar("n=%d\n", n);
-	reset_to_98(&n);
-	putchar("n=%d\n", n);
-	return (0);
+	*n = 98;
 }
