@@ -1,25 +1,35 @@
 #include <stdio.h>
 /**
- * main - print all possible combinations
- * of two different digits
- * in ascending orders seperated by commas
- * followed by a space
- *return: always 0 (success)
+ * main - print double digit combos
+ *
+ * Description: print double digit combo
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int digit1, digit2;
+	int i, j;
 
-	for (digit1 = 0; digit1 < 9: digit1++)
+	i = 48;
+	j = 48;
+
+	while (i < 58)
 	{
-		putchar((digit1 % 10) + '0');
-		putchar((digit2 % 10) + '0')
-	if (digit1 == 8 && digit2 ==9)
-	continue;
-	putchar(',');	
-	putchar('');
+		j = i + 1;
+		while (j < 58)
+		{
+			putchar(i);
+			putchar(j);
+
+			if (i < 56 || j < 57)
+			{
+				putchar(44);
+				putchar(32);
+			}
+			j++;
+		}
+		i++;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
-
