@@ -1,6 +1,3 @@
-/**
- * function_like_macro.h
- */
 #ifndef _FUNCTION_LIKE_MACRO_
 #define _FUNCTION_LIKE_MACRO_
 
